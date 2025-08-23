@@ -3,13 +3,11 @@ import streamlit as st
 import yaml
 import pandas as pd
 from openai import OpenAI
-from dotenv import load_dotenv
-import os
 import re
 
 # ----------------- SETUP -----------------
-load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+api_key = st.secrets.get("OPENAI_API_KEY")
+client = OpenAI(api_key=api_key)
 
 TOTAL_BUDGET = 260
 
