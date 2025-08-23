@@ -12,6 +12,7 @@ client = OpenAI(api_key=api_key)
 
 TOTAL_BUDGET = 260
 
+
 # ----------------- HELPERS -----------------
 def clean_response(text: str) -> str:
     """Fixes broken AI output and normalizes formatting for Streamlit."""
@@ -31,6 +32,7 @@ def clean_response(text: str) -> str:
 
     return text
 
+
 def open_configs():
     with open("league_scoring.md", "r", encoding="utf-8") as file:
         league_scoring = file.read()
@@ -43,6 +45,7 @@ def open_configs():
 
     return league_scoring, cheat_sheet, rosters
 
+
 def get_remaining_budgets(data: dict, total_budget: int = 260) -> dict:
     remaining = {}
     for team_name, roster in data.items():
@@ -52,6 +55,7 @@ def get_remaining_budgets(data: dict, total_budget: int = 260) -> dict:
                 spent += info.get("cost", 0) or 0
         remaining[team_name] = total_budget - spent
     return remaining
+
 
 def who_should_i_nominate(background_info: str, user_team: str, remaining_budget: int):
     prompt = f"""
@@ -67,7 +71,8 @@ def who_should_i_nominate(background_info: str, user_team: str, remaining_budget
         {user_team} has a remaining budget of {remaining_budget}.
         """,
     )
-    return clean_response(response.output_text)
+    return response.output_text
+
 
 def should_i_bid(background_info: str, user_team: str, other_team: str, player: str, remaining_budget: int):
     prompt = f"""
@@ -84,7 +89,8 @@ def should_i_bid(background_info: str, user_team: str, other_team: str, player: 
         {user_team} has {remaining_budget} left.
         """,
     )
-    return clean_response(response.output_text)
+    return response.output_text
+
 
 def roster_to_df(team_roster: dict):
     rows = []
@@ -94,6 +100,7 @@ def roster_to_df(team_roster: dict):
         else:
             rows.append({"Slot": slot, "Player": str(info), "Cost": 0})
     return pd.DataFrame(rows)
+
 
 # ----------------- STREAMLIT APP -----------------
 st.title("🏈 Fantasy Draft Assistant")
@@ -105,7 +112,8 @@ remaining_budget = get_remaining_budgets(rosters)
 user_team = st.selectbox("Which team are you?", list(rosters.keys()))
 
 # Draft strategy input
-draft_strategy = st.text_area("✍️ Enter Your Draft Strategy", placeholder="e.g. Prioritize QBs early, cheap RBs, elite WRs...")
+draft_strategy = st.text_area("✍️ Enter Your Draft Strategy",
+                              placeholder="e.g. Prioritize QBs early, cheap RBs, elite WRs...")
 
 # Build background info
 background_info = f"""
