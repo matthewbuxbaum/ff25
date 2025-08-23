@@ -4,6 +4,7 @@ import yaml
 import pandas as pd
 from openai import OpenAI
 import re
+import textwrap
 
 # ----------------- SETUP -----------------
 api_key = st.secrets.get("OPENAI_API_KEY")
@@ -13,10 +14,22 @@ TOTAL_BUDGET = 260
 
 # ----------------- HELPERS -----------------
 def clean_response(text: str) -> str:
-    """Fixes weird spacing and line breaks in AI responses."""
-    text = re.sub(r"\n+", "\n\n", text)  # collapse multiple newlines
-    text = re.sub(r"([a-zA-Z])\s+([a-zA-Z])", r"\1\2", text)  # fix broken words
-    return text.strip()
+    """Fixes broken AI output and normalizes formatting for Streamlit."""
+    # Fix broken words split across lines/spaces
+    text = re.sub(r"(\w)[ \n]+(\w)", r"\1\2", text)
+
+    # Collapse multiple newlines
+    text = re.sub(r"\n{2,}", "\n\n", text)
+
+    # Strip extra whitespace
+    text = text.strip()
+
+    # Re-wrap long paragraphs for readability
+    text = "\n\n".join(
+        [textwrap.fill(para, width=100) for para in text.split("\n") if para.strip()]
+    )
+
+    return text
 
 def open_configs():
     with open("league_scoring.md", "r", encoding="utf-8") as file:
@@ -43,7 +56,10 @@ def get_remaining_budgets(data: dict, total_budget: int = 260) -> dict:
 def who_should_i_nominate(background_info: str, user_team: str, remaining_budget: int):
     prompt = f"""
     Review {user_team}'s current roster and other teams to determine who they should nominate.
-    Consider bluffs but it’s optional. Return a 5–8 sentence response.
+    Always return your answer in **Markdown** with:
+    - A short intro (1–2 sentences)
+    - 3–5 concise bullet points with actionable advice
+    - Bold key players or strategies
     """
     response = client.responses.create(
         model="gpt-5-mini",
@@ -55,7 +71,11 @@ def who_should_i_nominate(background_info: str, user_team: str, remaining_budget
 
 def should_i_bid(background_info: str, user_team: str, other_team: str, player: str, remaining_budget: int):
     prompt = f"""
-    Should {user_team} bid on this player nominated by another team? Return a 5–8 sentence response.
+    Should {user_team} bid on this player nominated by {other_team}?
+    Always return your answer in **Markdown** with:
+    - A direct yes/no recommendation up front
+    - 3–5 bullet points explaining the reasoning
+    - Bold key numbers, players, or risks
     """
     response = client.responses.create(
         model="gpt-5-mini",
@@ -129,7 +149,6 @@ with st.form("roster_manager"):
 st.subheader("📢 Who Should I Nominate?")
 if st.button(f"Suggest Nomination for {user_team}"):
     pick = who_should_i_nominate(background_info, user_team, remaining_budget[user_team])
-    st.subheader("Nomination Advice")
     st.markdown(pick)
 
 # ----------------- BID -----------------
@@ -140,7 +159,6 @@ player = st.text_input("Nominated Player", placeholder="e.g. Joe Burrow, QB")
 if st.button("Evaluate Bid"):
     if player.strip():
         bid_advice = should_i_bid(background_info, user_team, other_team, player, remaining_budget[user_team])
-        st.subheader("Bid Advice")
         st.markdown(bid_advice)
     else:
         st.warning("Please enter a player before evaluating the bid.")
