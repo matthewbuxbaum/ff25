@@ -129,7 +129,8 @@ with st.form("roster_manager"):
 st.subheader("📢 Who Should I Nominate?")
 if st.button(f"Suggest Nomination for {user_team}"):
     pick = who_should_i_nominate(background_info, user_team, remaining_budget[user_team])
-    st.success(pick)
+    st.subheader("Nomination Advice")
+    st.markdown(pick)
 
 # ----------------- BID -----------------
 st.subheader("🤔 Should I Bid?")
@@ -139,7 +140,8 @@ player = st.text_input("Nominated Player", placeholder="e.g. Joe Burrow, QB")
 if st.button("Evaluate Bid"):
     if player.strip():
         bid_advice = should_i_bid(background_info, user_team, other_team, player, remaining_budget[user_team])
-        st.info(bid_advice)
+        st.subheader("Bid Advice")
+        st.markdown(bid_advice)
     else:
         st.warning("Please enter a player before evaluating the bid.")
 
