@@ -1,0 +1,660 @@
+TeamBux:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamFink:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamBando:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamBerlow:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamStyne:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamChrome:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamLou:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamResis:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamMike:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamJerry:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamQuinn:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
+TeamHandy:
+  QB1:
+    player: null
+    cost: null
+  QB2:
+    player: null
+    cost: null
+  WR1:
+    player: null
+    cost: null
+  WR2:
+    player: null
+    cost: null
+  RB1:
+    player: null
+    cost: null
+  RB2:
+    player: null
+    cost: null
+  TE1:
+    player: null
+    cost: null
+  W/R/T1:
+    player: null
+    cost: null
+  W/R/T2:
+    player: null
+    cost: null
+  K:
+    player: null
+    cost: null
+  DEF:
+    player: null
+    cost: null
+  BENCH1:
+    player: null
+    cost: null
+  BENCH2:
+    player: null
+    cost: null
+  BENCH3:
+    player: null
+    cost: null
+  BENCH4:
+    player: null
+    cost: null
+  BENCH5:
+    player: null
+    cost: null
+  BENCH6:
+    player: null
+    cost: null
+  BENCH7:
+    player: null
+    cost: null
