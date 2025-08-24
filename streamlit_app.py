@@ -15,22 +15,26 @@ TOTAL_BUDGET = 260
 
 # ----------------- HELPERS -----------------
 def clean_response(text: str) -> str:
-    """Fixes broken AI output and normalizes formatting for Streamlit."""
+    """Fix AI output formatting for readability in plain text."""
     # Fix broken words split across lines/spaces
     text = re.sub(r"(\w)[ \n]+(\w)", r"\1\2", text)
 
     # Collapse multiple newlines
     text = re.sub(r"\n{2,}", "\n\n", text)
 
-    # Strip extra whitespace
+    # Strip leading/trailing whitespace
     text = text.strip()
 
-    # Re-wrap long paragraphs for readability
-    text = "\n\n".join(
-        [textwrap.fill(para, width=100) for para in text.split("\n") if para.strip()]
-    )
-
-    return text
+    # Re-wrap long paragraphs for readability,
+    # but don't touch bullet lists or numbered lists
+    lines = []
+    for para in text.split("\n"):
+        if para.strip().startswith(("-", "*", "•", "1.", "2.", "3.")):
+            # leave list items as-is
+            lines.append(para.strip())
+        elif para.strip():
+            lines.append(textwrap.fill(para.strip(), width=100))
+    return "\n".join(lines)
 
 
 def open_configs():
@@ -64,7 +68,7 @@ def who_should_i_nominate(background_info: str, user_team: str, remaining_budget
     Consider the estimated auction value provided in the cheat sheet.
     Consider the user-inputted draft strategy.
     Bench players usually go for $1.
-    Always return your answer in with:
+    Always return your answer with:
     - A short intro (1–2 sentences)
     - 3–5 concise bullet points with actionable advice
     """
@@ -164,7 +168,7 @@ with st.form("roster_manager"):
 st.subheader("📢 Who Should I Nominate?")
 if st.button(f"Suggest Nomination for {user_team}"):
     pick = who_should_i_nominate(background_info, user_team, remaining_budget[user_team])
-    st.markdown(pick)
+    st.code(clean_response(pick), language="")  # use monospace block
 
 # ----------------- BID -----------------
 st.subheader("🤔 Should I Bid?")
@@ -174,7 +178,7 @@ player = st.text_input("Nominated Player", placeholder="e.g. Joe Burrow, QB")
 if st.button("Evaluate Bid"):
     if player.strip():
         bid_advice = should_i_bid(background_info, user_team, other_team, player, remaining_budget[user_team])
-        st.markdown(bid_advice)
+        st.code(clean_response(bid_advice), language="")  # use monospace block
     else:
         st.warning("Please enter a player before evaluating the bid.")
 
