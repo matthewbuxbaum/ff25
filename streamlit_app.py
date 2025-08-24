@@ -122,6 +122,7 @@ Scoring: {league_scoring}
 Cheat sheet: {cheat_sheet}
 Strategy: {draft_strategy}
 Rosters: {rosters}
+Note: Once a player is drafted on a team, they cannot be drafted again.
 """
 
 # Show remaining budgets
