@@ -64,7 +64,7 @@ def who_should_i_nominate(background_info: str, user_team: str, remaining_budget
     Consider the estimated auction value provided in the cheat sheet.
     Consider the user-inputted draft strategy.
     Bench players usually go for $1.
-    Always return your answer in **Markdown** with:
+    Always return your answer in with:
     - A short intro (1–2 sentences)
     - 3–5 concise bullet points with actionable advice
     - Bold key players or strategies
@@ -85,7 +85,7 @@ def should_i_bid(background_info: str, user_team: str, other_team: str, player: 
     Consider the estimated auction value provided in the cheat sheet.
     Consider the user-inputted draft strategy.
     Bench players usually go for $1.
-    Always return your answer in **Markdown** with:
+    Always return your answer with:
     - A direct yes/no recommendation up front
     - 3–5 bullet points explaining the reasoning
     - Bold key numbers, players, or risks
