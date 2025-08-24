@@ -19,7 +19,7 @@ def open_configs():
     with open("rosters.yml", "r", encoding="utf-8") as file:
         rosters = yaml.safe_load(file)
 
-    return league_scoring, cheat_sheet, rosters
+    return cheat_sheet, rosters
 
 
 def get_remaining_budgets(data: dict, total_budget: int = 260) -> dict:
