@@ -55,9 +55,10 @@ def open_rosters():
 def get_remaining_budgets(data: dict, total_budget: int = 260) -> dict:
     remaining = {}
     for team_name, roster in data.items():
-        spent = sum(
-            info.get("cost", 0) for info in roster.values() if isinstance(info, dict)
-        )
+        spent = 0
+        for slot, info in roster.items():
+            if isinstance(info, dict):
+                spent += info.get("cost") or 0   # 👈 fix: ensures None becomes 0
         remaining[team_name] = total_budget - spent
     return remaining
 
