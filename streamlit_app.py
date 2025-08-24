@@ -3,6 +3,7 @@ import streamlit as st
 import yaml
 import pandas as pd
 from openai import OpenAI
+import re
 
 # ----------------- SETUP -----------------
 api_key = st.secrets.get("OPENAI_API_KEY")
@@ -12,66 +13,53 @@ TOTAL_BUDGET = 260
 
 
 # ----------------- HELPERS -----------------
-def open_configs():
+@st.cache_data
+def load_cheat_sheet() -> dict:
+    """Parse cheat_sheet.md into a structured dict by position."""
+    cheat_sheet = {"QB": [], "RB": [], "WR": [], "TE": []}
+    current_position = None
+
     with open("cheat_sheet.md", "r", encoding="utf-8") as file:
-        cheat_sheet = file.read()
+        for line in file:
+            line = line.strip()
+            if not line:
+                continue
 
+            if line.startswith("Top QB"):
+                current_position = "QB"; continue
+            elif line.startswith("Top RB"):
+                current_position = "RB"; continue
+            elif line.startswith("Top WR"):
+                current_position = "WR"; continue
+            elif line.startswith("TOP TE"):
+                current_position = "TE"; continue
+
+            if current_position:
+                match = re.match(r"^\d+\.\s+(.+?)\s+\((.+?)\)\s+—\s+\$(\d+)", line)
+                if match:
+                    name, team, cost = match.groups()
+                    cheat_sheet[current_position].append({
+                        "name": name.strip(),
+                        "team": team.strip(),
+                        "cost": int(cost),
+                    })
+
+    return cheat_sheet
+
+
+def open_rosters():
     with open("rosters.yml", "r", encoding="utf-8") as file:
-        rosters = yaml.safe_load(file)
-
-    return cheat_sheet, rosters
+        return yaml.safe_load(file)
 
 
 def get_remaining_budgets(data: dict, total_budget: int = 260) -> dict:
     remaining = {}
     for team_name, roster in data.items():
-        spent = 0
-        for slot, info in roster.items():
-            if isinstance(info, dict):
-                spent += info.get("cost", 0) or 0
+        spent = sum(
+            info.get("cost", 0) for info in roster.values() if isinstance(info, dict)
+        )
         remaining[team_name] = total_budget - spent
     return remaining
-
-
-def who_should_i_nominate(background_info: str, user_team: str, remaining_budget: int):
-    prompt = f"""
-    Review {user_team}'s current roster and other teams to determine who they should nominate.
-    Consider the player's remaining budget and open roster spots so they can plan to draft an entire team within the budget.
-    Consider the estimated auction value provided in the cheat sheet.
-    Consider the user-inputted draft strategy.
-    Bench players usually go for $1.
-    Always return your answer in with:
-    - A short intro (1–2 sentences)
-    - Use bullet points with 3-5 sentences and actionable advice
-    """
-    response = client.responses.create(
-        model="gpt-5-mini",
-        input=f"""{background_info} + {prompt} 
-        {user_team} has a remaining budget of {remaining_budget}.
-        """,
-    )
-    return response.output_text
-
-
-def should_i_bid(background_info: str, user_team: str, other_team: str, player: str, remaining_budget: int):
-    prompt = f"""
-    Should {user_team} bid on this player nominated by {other_team}?
-    Consider the player's remaining budget and open roster spots so they can plan to draft an entire team within the budget.
-    Consider the estimated auction value provided in the cheat sheet.
-    Consider the user-inputted draft strategy.
-    Bench players usually go for $1.
-    Always return your answer with:
-    - A direct yes/no recommendation up front
-    - Use bullet points with 3-5 sentences
-    """
-    response = client.responses.create(
-        model="gpt-5-mini",
-        input=f"""{background_info} + {prompt}
-        Team {other_team} nominated {player}.
-        {user_team} has {remaining_budget} left.
-        """,
-    )
-    return response.output_text
 
 
 def roster_to_df(team_roster: dict):
@@ -84,35 +72,106 @@ def roster_to_df(team_roster: dict):
     return pd.DataFrame(rows)
 
 
+def rosters_summary(rosters: dict) -> str:
+    """Return a compressed roster summary string."""
+    summary = []
+    for team, slots in rosters.items():
+        players = [
+            f"{info['player']} (${info['cost']})"
+            for info in slots.values()
+            if isinstance(info, dict) and info.get("player")
+        ]
+        summary.append(f"{team}: {', '.join(players) if players else 'empty'}")
+    return "\n".join(summary)
+
+
+def available_players(cheat_sheet: dict, rosters: dict) -> str:
+    """Return cheat sheet players excluding already drafted ones."""
+    drafted = {
+        info["player"]
+        for team in rosters.values()
+        for info in team.values()
+        if isinstance(info, dict) and info.get("player")
+    }
+
+    filtered = []
+    for pos, players in cheat_sheet.items():
+        remaining = [p for p in players if p["name"] not in drafted]
+        if remaining:
+            top = remaining[:15]  # trim to top 10 per position
+            filtered.append(f"\nTop {pos} still available:\n" +
+                            ", ".join([f"{p['name']} (${p['cost']})" for p in top]))
+    return "\n".join(filtered)
+
+
+def build_background_info(rosters: dict, strategy: str) -> str:
+    cheat_sheet = load_cheat_sheet()
+    return f"""
+This is a 12-team, $260 auction league budget. 2 starting QBs, 1 extra WR/RB/TE flex. Full PPR.
+Draft strategy: {strategy}
+
+Drafted rosters:
+{rosters_summary(rosters)}
+
+Available players:
+{available_players(cheat_sheet, rosters)}
+
+Note: once a player is drafted on a team, they cannot be drafted again.
+"""
+
+
+def who_should_i_nominate(background_info: str, user_team: str, remaining_budget: int):
+    prompt = f"""
+Review {user_team}'s current roster and other teams to determine who they should nominate.
+Always return:
+- A short intro (1–2 sentences)
+- Bullet points with 3–5 actionable sentences
+"""
+    response = client.responses.create(
+        model="gpt-5-mini",
+        input=f"""{background_info}\n\n{prompt}
+        {user_team} has a remaining budget of {remaining_budget}.
+        """,
+    )
+    return response.output_text
+
+
+def should_i_bid(background_info: str, user_team: str, other_team: str, player: str, remaining_budget: int):
+    prompt = f"""
+Should {user_team} bid on this player nominated by {other_team}?
+Always return:
+- Direct yes/no recommendation up front
+- Bullet points with 3–5 sentences
+"""
+    response = client.responses.create(
+        model="gpt-5-mini",
+        input=f"""{background_info}\n\n{prompt}
+        Team {other_team} nominated {player}.
+        {user_team} has {remaining_budget} left.
+        """,
+    )
+    return response.output_text
+
+
 # ----------------- STREAMLIT APP -----------------
 st.title("🏈 Bux AI: Fantasy Draft Assistant")
 
-cheat_sheet, rosters = open_configs()
+rosters = open_rosters()
 remaining_budget = get_remaining_budgets(rosters)
 
-# Dropdown for selecting *your* team
+# User inputs
 user_team = st.selectbox("Which team are you?", list(rosters.keys()))
-
-# Draft strategy input
 draft_strategy = st.text_area("✍️ Enter Your Draft Strategy",
                               placeholder="e.g. Prioritize QBs early, cheap RBs, elite WRs...")
 
-# Build background info
-background_info = f"""
-This is a 12-team, $260 auction league budget. 2 starting QB's, 1 extra WR/RB/TE flex.  1 full PPR.
-Cheat sheet: {cheat_sheet}
-Strategy: {draft_strategy}
-Rosters: {rosters}
-Note: Once a player is drafted on a team, they cannot be drafted again.
-"""
+background_info = build_background_info(rosters, draft_strategy)
 
-# Show remaining budgets
+# Budgets
 st.subheader("💰 Remaining Budgets")
 st.write(remaining_budget)
 
 # ----------------- ROSTER MANAGEMENT -----------------
 st.subheader("🛠 Manage Rosters")
-
 with st.form("roster_manager"):
     team_choice = st.selectbox("Select Team", list(rosters.keys()))
     slot_choice = st.selectbox("Select Roster Slot", list(rosters[team_choice].keys()))
@@ -129,17 +188,15 @@ with st.form("roster_manager"):
             rosters[team_choice][slot_choice] = {"player": "", "cost": 0}
             st.warning(f"🗑 Removed player from {team_choice} ({slot_choice})")
 
-        # Save changes to file
         with open("rosters.yml", "w", encoding="utf-8") as file:
             yaml.safe_dump(rosters, file, sort_keys=False, allow_unicode=True)
-
         st.rerun()
 
 # ----------------- NOMINATION -----------------
 st.subheader("📢 Who Should I Nominate?")
 if st.button(f"Suggest Nomination for {user_team}"):
     pick = who_should_i_nominate(background_info, user_team, remaining_budget[user_team])
-    st.text(pick)   # 👈 raw text output
+    st.text(pick)
 
 # ----------------- BID -----------------
 st.subheader("🤔 Should I Bid?")
@@ -149,7 +206,7 @@ player = st.text_input("Nominated Player", placeholder="e.g. Joe Burrow, QB")
 if st.button("Evaluate Bid"):
     if player.strip():
         bid_advice = should_i_bid(background_info, user_team, other_team, player, remaining_budget[user_team])
-        st.text(bid_advice)   # 👈 raw text output
+        st.text(bid_advice)
     else:
         st.warning("Please enter a player before evaluating the bid.")
 
