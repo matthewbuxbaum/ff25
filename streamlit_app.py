@@ -87,7 +87,7 @@ def roster_to_df(team_roster: dict):
 # ----------------- STREAMLIT APP -----------------
 st.title("🏈 Bux AI: Fantasy Draft Assistant")
 
-league_scoring, cheat_sheet, rosters = open_configs()
+cheat_sheet, rosters = open_configs()
 remaining_budget = get_remaining_budgets(rosters)
 
 # Dropdown for selecting *your* team
