@@ -58,7 +58,7 @@ def get_remaining_budgets(data: dict, total_budget: int = 260) -> dict:
         spent = 0
         for slot, info in roster.items():
             if isinstance(info, dict):
-                spent += info.get("cost") or 0
+                spent += info.get("cost") or 0   # 👈 fix: ensures None becomes 0
         remaining[team_name] = total_budget - spent
     return remaining
 
@@ -99,7 +99,7 @@ def available_players(cheat_sheet: dict, rosters: dict) -> str:
     for pos, players in cheat_sheet.items():
         remaining = [p for p in players if p["name"] not in drafted]
         if remaining:
-            top = remaining[:15]  # trim to top 15 per position
+            top = remaining[:15]  # trim to top 10 per position
             filtered.append(f"\nTop {pos} still available:\n" +
                             ", ".join([f"{p['name']} (${p['cost']})" for p in top]))
     return "\n".join(filtered)
@@ -121,53 +121,37 @@ Note: once a player is drafted on a team, they cannot be drafted again.
 """
 
 
-# ----------------- STREAMING -----------------
-def stream_response(prompt: str):
-    """Stream a response from OpenAI into the Streamlit app."""
-    placeholder = st.empty()
-    full_text = ""
-
-    with client.responses.stream(
-        model="gpt-5-mini",
-        input=prompt,
-    ) as stream:
-        for event in stream:
-            if event.type == "response.output_text.delta":
-                full_text += event.delta
-                placeholder.markdown(full_text)
-            elif event.type == "response.completed":
-                break
-
-    return full_text
-
-
 def who_should_i_nominate(background_info: str, user_team: str, remaining_budget: int):
     prompt = f"""
-{background_info}
-
 Review {user_team}'s current roster and other teams to determine who they should nominate.
 Always return:
 - A short intro (1–2 sentences)
 - Bullet points with 3–5 actionable sentences
-
-{user_team} has a remaining budget of {remaining_budget}.
 """
-    return stream_response(prompt)
+    response = client.responses.create(
+        model="gpt-5-mini",
+        input=f"""{background_info}\n\n{prompt}
+        {user_team} has a remaining budget of {remaining_budget}.
+        """,
+    )
+    return response.output_text
 
 
 def should_i_bid(background_info: str, user_team: str, other_team: str, player: str, remaining_budget: int):
     prompt = f"""
-{background_info}
-
 Should {user_team} bid on this player nominated by {other_team}?
 Always return:
 - Direct yes/no recommendation up front
 - Bullet points with 3–5 sentences
-
-Team {other_team} nominated {player}.
-{user_team} has {remaining_budget} left.
 """
-    return stream_response(prompt)
+    response = client.responses.create(
+        model="gpt-5-mini",
+        input=f"""{background_info}\n\n{prompt}
+        Team {other_team} nominated {player}.
+        {user_team} has {remaining_budget} left.
+        """,
+    )
+    return response.output_text
 
 
 # ----------------- STREAMLIT APP -----------------
@@ -212,7 +196,8 @@ with st.form("roster_manager"):
 # ----------------- NOMINATION -----------------
 st.subheader("📢 Who Should I Nominate?")
 if st.button(f"Suggest Nomination for {user_team}"):
-    who_should_i_nominate(background_info, user_team, remaining_budget[user_team])
+    pick = who_should_i_nominate(background_info, user_team, remaining_budget[user_team])
+    st.text(pick)
 
 # ----------------- BID -----------------
 st.subheader("🤔 Should I Bid?")
@@ -221,7 +206,8 @@ player = st.text_input("Nominated Player", placeholder="e.g. Joe Burrow, QB")
 
 if st.button("Evaluate Bid"):
     if player.strip():
-        should_i_bid(background_info, user_team, other_team, player, remaining_budget[user_team])
+        bid_advice = should_i_bid(background_info, user_team, other_team, player, remaining_budget[user_team])
+        st.text(bid_advice)
     else:
         st.warning("Please enter a player before evaluating the bid.")
 
