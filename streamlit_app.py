@@ -62,6 +62,7 @@ def who_should_i_nominate(background_info: str, user_team: str, remaining_budget
     Review {user_team}'s current roster and other teams to determine who they should nominate.
     Consider the player's remaining budget and open roster spots so they can plan to draft an entire team within the budget.
     Consider the estimated auction value provided in the cheat sheet.
+    Consider the user-inputted draft strategy.
     Bench players usually go for $1.
     Always return your answer in **Markdown** with:
     - A short intro (1–2 sentences)
@@ -82,6 +83,7 @@ def should_i_bid(background_info: str, user_team: str, other_team: str, player: 
     Should {user_team} bid on this player nominated by {other_team}?
     Consider the player's remaining budget and open roster spots so they can plan to draft an entire team within the budget.
     Consider the estimated auction value provided in the cheat sheet.
+    Consider the user-inputted draft strategy.
     Bench players usually go for $1.
     Always return your answer in **Markdown** with:
     - A direct yes/no recommendation up front
