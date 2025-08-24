@@ -36,7 +36,7 @@ Passing Touchdowns	4 pts
 Interceptions	-1 pt
 Rushing Yards	1 pt per 10 yards; +1 at 100 yds, +2 at 150 yds, +3 at 200 yds
 Rushing Touchdowns	6 pts
-Receptions	0.5 pts (Half-PPR)
+Receptions	1.0 pts (PPR)
 Receiving Yards	1 pt per 10 yards; +1 at 100 yds, +2 at 150 yds, +3 at 200 yds
 Receiving Touchdowns	6 pts
 Return Touchdowns	6 pts

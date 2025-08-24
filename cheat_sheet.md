@@ -1,475 +1,248 @@
-# 2QB Auction Draft Cheat Sheet (Top 100 Overall, $260 budget, 12 teams, 0.5 PPR)
+# 2QB Auction Draft Cheat Sheet
+Top QB Rank
+1. Josh Allen (BUF) — $54  
+2. Lamar Jackson (BAL) — $53  
+3. Jalen Hurts (PHI) — $44  
+4. Jayden Daniels (WAS) — $42  
+5. Joe Burrow (CIN) — $35  
+6. Patrick Mahomes II (KC) — $27  
+7. Baker Mayfield (TB) — $22  
+8. Kyler Murray (ARI) — $21  
+9. Brock Purdy (SF) — $18  
+10. Bo Nix (DEN) — $16  
+11. Justin Fields (PIT) — $11  
+12. J.J. McCarthy (MIN) — $7  
+13. Dak Prescott (DAL) — $7  
+14. Justin Herbert (LAC) — $7  
+15. Caleb Williams (CHI) — $6  
+16. Jared Goff (DET) — $5  
+17. C.J. Stroud (HOU) — $2  
+18. Jordan Love (GB) — $1  
+19. Drake Maye (NE) — $1  
+20. Trevor Lawrence (JAC) — $2  
+21. Michael Penix Jr. (ATL) — $1  
+22. Bryce Young (CAR) — $1  
+23. Tua Tagovailoa (MIA) — $1  
+24. Matthew Stafford (LAR) — $1  
+25. Geno Smith (SEA) — $2  
+26. Cam Ward (TEN) — $1  
+27. Sam Darnold (SEA) — $1  
+28. Aaron Rodgers (PIT) — $2  
+29. Daniel Jones (IND) — $1  
+30. Russell Wilson (NYG) — $2  
+31. Tyler Shough (NO) — $1  
+32. Joe Flacco (CLE) — $1
 
-Top 100 All positions
-
-| Rk | Player | Pos | Team | $ |
-|---:|---|---|---|---:|
-| 1 | Josh Allen | QB | BUF | 57 |
-| 2 | Jalen Hurts | QB | PHI | 55 |
-| 3 | Patrick Mahomes | QB | KC | 54 |
-| 4 | Lamar Jackson | QB | BAL | 53 |
-| 5 | C.J. Stroud | QB | HOU | 48 |
-| 6 | Christian McCaffrey | RB | SF | 59 |
-| 7 | Joe Burrow | QB | CIN | 45 |
-| 8 | Anthony Richardson | QB | IND | 44 |
-| 9 | Justin Jefferson | WR | MIN | 52 |
-| 10 | Justin Herbert | QB | LAC | 41 |
-| 11 | Dak Prescott | QB | DAL | 41 |
-| 12 | Bijan Robinson | RB | ATL | 46 |
-| 13 | Breece Hall | RB | NYJ | 48 |
-| 14 | Ja'Marr Chase | WR | CIN | 49 |
-| 15 | Tyreek Hill | WR | MIA | 46 |
-| 16 | Amon-Ra St. Brown | WR | DET | 44 |
-| 17 | CeeDee Lamb | WR | DAL | 44 |
-| 18 | Kyler Murray | QB | ARI | 36 |
-| 19 | Jordan Love | QB | GB | 38 |
-| 20 | Tua Tagovailoa | QB | MIA | 36 |
-| 21 | Trevor Lawrence | QB | JAX | 34 |
-| 22 | Brock Purdy | QB | SF | 34 |
-| 23 | Jared Goff | QB | DET | 32 |
-| 24 | Kirk Cousins | QB | ATL | 32 |
-| 25 | Jonathan Taylor | RB | IND | 41 |
-| 26 | Saquon Barkley | RB | PHI | 40 |
-| 27 | Jahmyr Gibbs | RB | DET | 39 |
-| 28 | Puka Nacua | WR | LAR | 42 |
-| 29 | A.J. Brown | WR | PHI | 41 |
-| 30 | Garrett Wilson | WR | NYJ | 38 |
-| 31 | Drake London | WR | ATL | 36 |
-| 32 | Davante Adams | WR | LV | 35 |
-| 33 | Marvin Harrison Jr. | WR | ARI | 32 |
-| 34 | Sam LaPorta | TE | DET | 27 |
-| 35 | Travis Kelce | TE | KC | 24 |
-| 36 | Travis Etienne | RB | JAX | 34 |
-| 37 | Kyren Williams | RB | LAR | 33 |
-| 38 | De'Von Achane | RB | MIA | 32 |
-| 39 | Derrick Henry | RB | BAL | 31 |
-| 40 | Josh Jacobs | RB | GB | 30 |
-| 41 | Stefon Diggs | WR | HOU | 32 |
-| 42 | Nico Collins | WR | HOU | 31 |
-| 43 | Jaylen Waddle | WR | MIA | 30 |
-| 44 | Deebo Samuel | WR | SF | 30 |
-| 45 | Cooper Kupp | WR | LAR | 29 |
-| 46 | Chris Olave | WR | NO | 31 |
-| 47 | Michael Pittman Jr. | WR | IND | 28 |
-| 48 | Brandon Aiyuk | WR | SF | 30 |
-| 49 | DK Metcalf | WR | SEA | 27 |
-| 50 | Keenan Allen | WR | CHI | 27 |
-| 51 | DJ Moore | WR | CHI | 27 |
-| 52 | Tee Higgins | WR | CIN | 25 |
-| 53 | Mark Andrews | TE | BAL | 20 |
-| 54 | Trey McBride | TE | ARI | 20 |
-| 55 | Dalton Kincaid | TE | BUF | 18 |
-| 56 | Matthew Stafford | QB | LAR | 27 |
-| 57 | Aaron Rodgers | QB | NYJ | 25 |
-| 58 | Caleb Williams | QB | CHI | 28 |
-| 59 | Jayden Daniels | QB | WAS | 27 |
-| 60 | Deshaun Watson | QB | CLE | 22 |
-| 61 | Geno Smith | QB | SEA | 16 |
-| 62 | Derek Carr | QB | NO | 14 |
-| 63 | Baker Mayfield | QB | TB | 14 |
-| 64 | Russell Wilson | QB | PIT | 12 |
-| 65 | Daniel Jones | QB | NYG | 11 |
-| 66 | Isiah Pacheco | RB | KC | 27 |
-| 67 | Rachaad White | RB | TB | 25 |
-| 68 | James Cook | RB | BUF | 24 |
-| 69 | Joe Mixon | RB | HOU | 24 |
-| 70 | Kenneth Walker III | RB | SEA | 23 |
-| 71 | Alvin Kamara | RB | NO | 23 |
-| 72 | Aaron Jones | RB | MIN | 22 |
-| 73 | David Montgomery | RB | DET | 20 |
-| 74 | Tony Pollard | RB | TEN | 20 |
-| 75 | D'Andre Swift | RB | CHI | 19 |
-| 76 | Zamir White | RB | LV | 18 |
-| 77 | Brian Robinson Jr. | RB | WAS | 17 |
-| 78 | Austin Ekeler | RB | WAS | 17 |
-| 79 | Raheem Mostert | RB | MIA | 16 |
-| 80 | James Conner | RB | ARI | 16 |
-| 81 | Rhamondre Stevenson | RB | NE | 18 |
-| 82 | Terry McLaurin | WR | WAS | 23 |
-| 83 | Amari Cooper | WR | CLE | 23 |
-| 84 | Mike Evans | WR | TB | 24 |
-| 85 | DeVonta Smith | WR | PHI | 26 |
-| 86 | Calvin Ridley | WR | TEN | 21 |
-| 87 | Christian Kirk | WR | JAX | 20 |
-| 88 | George Pickens | WR | PIT | 20 |
-| 89 | Diontae Johnson | WR | CAR | 19 |
-| 90 | Drake Maye | QB | NE | 12 |
-| 91 | J.J. McCarthy | QB | MIN | 11 |
-| 92 | Bo Nix | QB | DEN | 10 |
-| 93 | Jordan Addison | WR | MIN | 19 |
-| 94 | Jaxon Smith-Njigba | WR | SEA | 18 |
-| 95 | Jameson Williams | WR | DET | 18 |
-| 96 | Chris Godwin | WR | TB | 18 |
-| 97 | Marquise Brown | WR | KC | 16 |
-| 98 | George Kittle | TE | SF | 16 |
-| 99 | Evan Engram | TE | JAX | 14 |
-| 100 | David Njoku | TE | CLE | 13 |
-
-
-QB Rank
-
-| Rank | Player | Team | $ |
-|---:|---|---|---:|
-| 1 | Josh Allen | BUF | 66 |
-| 2 | Patrick Mahomes | KC | 65 |
-| 3 | Jalen Hurts | PHI | 63 |
-| 4 | Lamar Jackson | BAL | 62 |
-| 5 | Joe Burrow | CIN | 56 |
-| 6 | C.J. Stroud | HOU | 54 |
-| 7 | Justin Herbert | LAC | 51 |
-| 8 | Dak Prescott | DAL | 48 |
-| 9 | Jordan Love | GB | 46 |
-| 10 | Anthony Richardson | IND | 45 |
-| 11 | Trevor Lawrence | JAX | 43 |
-| 12 | Brock Purdy | SF | 41 |
-| 13 | Tua Tagovailoa | MIA | 39 |
-| 14 | Kyler Murray | ARI | 37 |
-| 15 | Jared Goff | DET | 34 |
-| 16 | Caleb Williams | CHI | 32 |
-| 17 | Kirk Cousins | ATL | 30 |
-| 18 | Aaron Rodgers | NYJ | 28 |
-| 19 | Deshaun Watson | CLE | 26 |
-| 20 | Jayden Daniels | WAS | 24 |
-| 21 | Matthew Stafford | LAR | 22 |
-| 22 | Baker Mayfield | TB | 20 |
-| 23 | Geno Smith | SEA | 19 |
-| 24 | Russell Wilson | PIT | 18 |
-| 25 | Daniel Jones | NYG | 17 |
-| 26 | Derek Carr | NO | 16 |
-| 27 | Will Levis | TEN | 15 |
-| 28 | Bryce Young | CAR | 14 |
-| 29 | Justin Fields | PIT | 13 |
-| 30 | Drake Maye | NE | 12 |
-| 31 | J.J. McCarthy | MIN | 12 |
-| 32 | Bo Nix | DEN | 11 |
-| 33 | Michael Penix Jr. | ATL | 10 |
-| 34 | Aidan O'Connell | LV | 9 |
-| 35 | Gardner Minshew | LV | 9 |
-| 36 | Sam Darnold | MIN | 8 |
-| 37 | Jacoby Brissett | NE | 8 |
-| 38 | Kenny Pickett | PHI | 7 |
-| 39 | Jimmy Garoppolo | LAR | 7 |
-| 40 | Sam Howell | SEA | 6 |
-| 41 | Taylor Heinicke | ATL | 5 |
-| 42 | Tyrod Taylor | NYJ | 5 |
-| 43 | Mike White | MIA | 5 |
-| 44 | Davis Mills | HOU | 4 |
-| 45 | Mac Jones | JAX | 4 |
-| 46 | Zach Wilson | DEN | 4 |
-| 47 | Andy Dalton | CAR | 3 |
-| 48 | Jameis Winston | CLE | 3 |
-| 49 | Joe Flacco | IND | 3 |
-| 50 | Easton Stick | LAC | 3 |
-| 51 | Kyle Trask | TB | 3 |
-| 52 | Desmond Ridder | ARI | 3 |
-| 53 | Drew Lock | NYG | 2 |
-| 54 | Jake Browning | CIN | 2 |
-| 55 | Mitchell Trubisky | BUF | 2 |
-| 56 | Dorian Thompson-Robinson | CLE | 2 |
-| 57 | Nick Mullens | MIN | 2 |
-| 58 | Hendon Hooker | DET | 2 |
-| 59 | Mason Rudolph | TEN | 2 |
-| 60 | Marcus Mariota | WAS | 2 |
-| 61 | Cooper Rush | DAL | 2 |
-| 62 | Tyler Huntley | CLE | 1 |
-| 63 | Jake Haener | NO | 1 |
-| 64 | Jarrett Stidham | DEN | 1 |
-| 65 | Brandon Allen | SF | 1 |
-| 66 | Bailey Zappe | NE | 1 |
-| 67 | Clayton Tune | ARI | 1 |
-| 68 | Sean Clifford | GB | 1 |
-| 69 | Tanner McKee | PHI | 1 |
-| 70 | Carson Wentz | KC | 1 |
-| 71 | Tommy DeVito | NYG | 1 |
-| 72 | John Wolford | TB | 1 |
-| 73 | Case Keenum | HOU | 1 |
-| 74 | P.J. Walker | CLE | 1 |
-| 75 | Joshua Dobbs | SF | 1 |
-| 76 | Brett Rypien | TB | 1 |
-| 77 | Joe Milton | NE | 1 |
-| 78 | Spencer Rattler | NO | 1 |
-| 79 | Michael Pratt | GB | 1 |
-| 80 | Jordan Travis | NYJ | 1 |
-| 81 | A.J. McCarron | CIN | 1 |
-| 82 | Nathan Peterman | NO | 1 |
-| 83 | Tim Boyle | NYJ | 1 |
-| 84 | Logan Woodside | ATL | 1 |
-| 85 | Will Grier | LAC | 1 |
-| 86 | Holton Ahlers | SEA | 1 |
-| 87 | Bryce Perkins | LAR | 1 |
-| 88 | Kellen Mond | IND | 1 |
-| 89 | Shane Buechele | BUF | 1 |
-| 90 | Skylar Thompson | MIA | 1 |
-| 91 | C.J. Beathard | JAX | 1 |
-| 92 | Brian Hoyer | LV | 1 |
-| 93 | Sam Ehlinger | IND | 1 |
-| 94 | Malik Willis | TEN | 1 |
-| 95 | Jaren Hall | MIN | 1 |
-| 96 | Tyson Bagent | CHI | 1 |
-| 97 | Chris Oladokun | KC | 1 |
-| 98 | Josh Johnson | BAL | 1 |
-| 99 | Kyle Allen | BUF | 1 |
-| 100 | Jake Luton | NO | 1 |
 
 Top RB rank
+1. Bijan Robinson (ATL) — $60  
+2. Jahmyr Gibbs (DET) — $58  
+3. Saquon Barkley (PHI) — $57  
+4. Christian McCaffrey (SF) — $51  
+5. De'Von Achane (MIA) — $47  
+6. Derrick Henry (BAL) — $42  
+7. Josh Jacobs (GB) — $42  
+8. Ashton Jeanty (LV) — $41  
+9. Jonathan Taylor (IND) — $39  
+10. Chase Brown (CIN) — $38  
+11. Kyren Williams (LAR) — $37  
+12. Bucky Irving (TB) — $36  
+13. Alvin Kamara (NO) — $34  
+14. James Cook (BUF) — $30  
+15. Breece Hall (NYJ) — $29  
+16. James Conner (ARI) — $28  
+17. Kenneth Walker III (SEA) — $27  
+18. Chuba Hubbard (CAR) — $26  
+19. Omarion Hampton (LAC) — $25  
+20. D'Andre Swift (CHI) — $21  
+21. Aaron Jones Sr. (MIN) — $21  
+22. Tony Pollard (TEN) — $20  
+23. David Montgomery (DET) — $19  
+24. TreVeyon Henderson (NE) — $18  
+25. Isiah Pacheco (KC) — $14  
+26. RJ Harvey (DEN) — $14  
+27. Jaylen Warren (PIT) — $14  
+28. Tyrone Tracy Jr. (NYG) — $14  
+29. Joe Mixon (HOU) — $12  
+30. Austin Ekeler (WAS) — $12  
+31. Kaleb Johnson (PIT) — $11  
+32. Travis Etienne Jr. (JAC) — $9  
+33. Zach Charbonnet (SEA) — $7  
+34. J. Croskey‑Merritt (WAS) — $7  
+35. J.K. Dobbins (DEN) — $7  
+36. Javonte Williams (DAL) — $7  
+37. Quinshon Judkins (CLE) — $7  
+38. Rhamondre Stevenson (NE) — $7  
+39. Jordan Mason (MIN) — $6  
+40. Rachaad White (TB) — $6  
+41. Tyjae Spears (TEN) — $6  
+42. Jerome Ford (CLE) — $5  
+43. Cam Skattebo (NYG) — $4  
+44. Najee Harris (LAC) — $4  
+45. Tank Bigsby (JAC) — $4  
+46. Dylan Sampson (CLE) — $3  
+47. Jaydon Blue — $2  
+48. Trey Benson (ARI) — $2  
+49. Nick Chubb (HOU) — $2  
+50. Jaylen Wright (MIA) — $2  
+51. Tyler Allgeier (ATL) — $2  
+52. Ray Davis (BUF) — $2  
+53. Rico Dowdle (CAR) — $2  
+54. Braelon Allen (NYJ) — $2  
+55. Bhayshul Tuten (JAC) — $1  
+56. Kareem Hunt (KC) — $1  
+57. Woody Marks (HOU) — $0  
+58. Roschon Johnson (CHI) — $0  
+59. Justice Hill (BAL) — $0  
+60. MarShawn Lloyd (GB) — $0  
+61. Raheem Mostert (LV) — $0  
+62. Miles Sanders (DAL) — $0  
+63. Kendre Miller (NO) — $0  
+64. Brian Robinson Jr. — $0  
+65. C. Patterson — $0  
+66. Ty Johnson — $0  
+67. Blake Corum — $0  
+68. Keaton Mitchell — $0  
+69. Samaje Perine — $0  
+70. Ollie Gordon II — $0  
+71. Antonio Gibson — $0  
+72. Chris Rodriguez Jr. — $0  
+73. Isaac Guerendo — $0  
+74. Tahj Brooks — $0  
+75. Jaleel McLaughlin — $0  
+76. Kenneth Gainwell — $0  
+77. Jarquez Hunter — $0  
+78. Elijah Mitchell — $0  
+79. Trevor Etienne — $0  
+80. Devin Singletary — $0  
+81. Kyle Monangai — $0  
+82. Will Shipley — $0  
+83. Khalil Herbert — $0  
+84. Emanuel Wilson — $0  
+85. Devin Neal — $0  
+86. Zamir White — $0  
+87. Sean Tucker — $0  
+88. D.J. Giddens — $0  
+89. A.J. Dillon — $0  
+90. Kyle Juszczyk — $0  
+91. Audric Estime — $0  
+92. Isaiah Davis — $0  
+93. Pierre Strong Jr. — $0  
+94. Chris Brooks — $0  
+95. Emari Demercado — $0  
+96. Amar Johnson — $0  
+97. Brashard Smith — $0  
+98. Clyde Edwards‑Helaire — $0  
+99. Kimani Vidal — $0
 
-| Rank | Player | Team | $ |
-|---:|---|:---:|---:|
-| 1 | Christian McCaffrey | SF | 55 |
-| 2 | Breece Hall | NYJ | 50 |
-| 3 | Bijan Robinson | ATL | 49 |
-| 4 | Jahmyr Gibbs | DET | 46 |
-| 5 | Jonathan Taylor | IND | 43 |
-| 6 | Saquon Barkley | PHI | 40 |
-| 7 | Kyren Williams | LAR | 38 |
-| 8 | Travis Etienne | JAX | 36 |
-| 9 | De'Von Achane | MIA | 34 |
-| 10 | Derrick Henry | BAL | 33 |
-| 11 | Josh Jacobs | GB | 31 |
-| 12 | Isiah Pacheco | KC | 30 |
-| 13 | Rachaad White | TB | 29 |
-| 14 | James Cook | BUF | 28 |
-| 15 | Joe Mixon | HOU | 27 |
-| 16 | Alvin Kamara | NO | 26 |
-| 17 | Kenneth Walker III | SEA | 26 |
-| 18 | Javonte Williams | DEN | 24 |
-| 19 | Aaron Jones | MIN | 23 |
-| 20 | David Montgomery | DET | 23 |
-| 21 | Rhamondre Stevenson | NE | 22 |
-| 22 | Jaylen Warren | PIT | 21 |
-| 23 | Najee Harris | PIT | 21 |
-| 24 | Tony Pollard | TEN | 20 |
-| 25 | Nick Chubb | CLE | 20 |
-| 26 | Zamir White | LV | 19 |
-| 27 | D'Andre Swift | CHI | 18 |
-| 28 | Brian Robinson Jr. | WAS | 18 |
-| 29 | James Conner | ARI | 18 |
-| 30 | Tyjae Spears | TEN | 17 |
-| 31 | Austin Ekeler | WAS | 17 |
-| 32 | Raheem Mostert | MIA | 17 |
-| 33 | Zack Moss | CIN | 16 |
-| 34 | Jonathon Brooks | CAR | 15 |
-| 35 | Trey Benson | ARI | 15 |
-| 36 | Blake Corum | LAR | 14 |
-| 37 | Jaylen Wright | MIA | 13 |
-| 38 | MarShawn Lloyd | GB | 13 |
-| 39 | Audric Estime | DEN | 12 |
-| 40 | Ray Davis | BUF | 12 |
-| 41 | Bucky Irving | TB | 12 |
-| 42 | Quinshon Judkins (R) | TBD | 12 |
-| 43 | TreVeyon Henderson (R) | TBD | 12 |
-| 44 | Ollie Gordon II (R) | TBD | 11 |
-| 45 | Omarion Hampton (R) | TBD | 10 |
-| 46 | Nicholas Singleton (R) | TBD | 9 |
-| 47 | Trevor Etienne (R) | TBD | 8 |
-| 48 | Damien Martinez (R) | TBD | 7 |
-| 49 | Donovan Edwards (R) | TBD | 6 |
-| 50 | Jaydn Ott (R) | TBD | 5 |
-| 51 | Will Shipley | PHI | 9 |
-| 52 | Braelon Allen | NYJ | 9 |
-| 53 | Kendre Miller | NO | 9 |
-| 54 | Kimani Vidal | LAC | 8 |
-| 55 | Tyrone Tracy Jr. | NYG | 8 |
-| 56 | Gus Edwards | LAC | 8 |
-| 57 | Jerome Ford | CLE | 8 |
-| 58 | Zach Charbonnet | SEA | 7 |
-| 59 | Devin Singletary | NYG | 7 |
-| 60 | Tyler Allgeier | ATL | 7 |
-| 61 | Kenneth Gainwell | PHI | 6 |
-| 62 | Chuba Hubbard | CAR | 6 |
-| 63 | Khalil Herbert | CHI | 6 |
-| 64 | Roschon Johnson | CHI | 6 |
-| 65 | Elijah Mitchell | SF | 6 |
-| 66 | Chase Brown | CIN | 6 |
-| 67 | Tank Bigsby | JAX | 6 |
-| 68 | Antonio Gibson | NE | 6 |
-| 69 | Ezekiel Elliott | DAL | 6 |
-| 70 | AJ Dillon | GB | 5 |
-| 71 | Miles Sanders | CAR | 5 |
-| 72 | Jaleel McLaughlin | DEN | 5 |
-| 73 | Samaje Perine | DEN | 5 |
-| 74 | Alexander Mattison | LV | 5 |
-| 75 | Keaton Mitchell | BAL | 5 |
-| 76 | Justice Hill | BAL | 4 |
-| 77 | D'Ernest Johnson | JAX | 4 |
-| 78 | Jordan Mason | SF | 4 |
-| 79 | Ty Chandler | MIN | 4 |
-| 80 | Pierre Strong Jr. | CLE | 4 |
-| 81 | Emari Demercado | ARI | 4 |
-| 82 | Clyde Edwards-Helaire | KC | 3 |
-| 83 | JK Dobbins | LAC | 3 |
-| 84 | Isaiah Spiller | LAC | 3 |
-| 85 | Michael Carter | ARI | 3 |
-| 86 | Rico Dowdle | DAL | 3 |
-| 87 | Deuce Vaughn | DAL | 3 |
-| 88 | Isaac Guerendo | SF | 3 |
-| 89 | Jerick McKinnon | KC | 2 |
-| 90 | Ronnie Rivers | LAR | 2 |
-| 91 | Royce Freeman | DAL | 2 |
-| 92 | Cordarrelle Patterson | PIT | 2 |
-| 93 | Jeff Wilson Jr. | MIA | 2 |
-| 94 | Salvon Ahmed | MIA | 2 |
-| 95 | Jamaal Williams | NO | 2 |
-| 96 | Chris Rodriguez Jr. | WAS | 2 |
-| 97 | Eric Gray | NYG | 2 |
-| 98 | Chris Evans | CIN | 2 |
-| 99 | Evan Hull | IND | 2 |
-| 100 | Israel Abanikanda | NYJ | 2 |
-
-
-Top 100 Rank
-1. Justin Jefferson (MIN) — $55
-2. Ja’Marr Chase (CIN) — $54
-3. CeeDee Lamb (DAL) — $53
-4. Tyreek Hill (MIA) — $51
-5. Amon-Ra St. Brown (DET) — $49
-6. A.J. Brown (PHI) — $47
-7. Garrett Wilson (NYJ) — $45
-8. Puka Nacua (LAR) — $44
-9. Marvin Harrison Jr. (ARI) — $43
-10. Brandon Aiyuk (SF) — $39
-11. Jaylen Waddle (MIA) — $38
-12. Chris Olave (NO) — $37
-13. Nico Collins (HOU) — $36
-14. Deebo Samuel (SF) — $34
-15. Drake London (ATL) — $33
-16. Stefon Diggs (HOU) — $32
-17. Davante Adams (LV) — $31
-18. DeVonta Smith (PHI) — $30
-19. Mike Evans (TB) — $29
-20. DK Metcalf (SEA) — $28
-21. Cooper Kupp (LAR) — $28
-22. Tee Higgins (CIN) — $27
-23. DJ Moore (CHI) — $25
-24. Jayden Reed (GB) — $25
-25. Tank Dell (HOU) — $24
-26. Keenan Allen (CHI) — $24
-27. Christian Kirk (JAX) — $22
-28. Chris Godwin (TB) — $22
-29. Rome Odunze (CHI) — $22
-30. Zay Flowers (BAL) — $21
-31. Jordan Addison (MIN) — $21
-32. Terry McLaurin (WAS) — $20
-33. Michael Pittman Jr. (IND) — $20
-34. Amari Cooper (CLE) — $19
-35. Malik Nabers (NYG) — $19
-36. George Pickens (PIT) — $18
-37. Jaxon Smith-Njigba (SEA) — $17
-38. Jakobi Meyers (LV) — $17
-39. Christian Watson (GB) — $16
-40. Rashee Rice (KC) — $16
-41. Khalil Shakir (BUF) — $16
-42. Xavier Worthy (KC) — $15
-43. Calvin Ridley (TEN) — $15
-44. Courtland Sutton (DEN) — $14
-45. Gabe Davis (JAX) — $13
-46. Ladd McConkey (LAC) — $13
-47. Brian Thomas Jr. (JAX) — $13
-48. Brandin Cooks (DAL) — $12
-49. Jerry Jeudy (CLE) — $12
-50. Tyler Lockett (SEA) — $11
-51. Keon Coleman (BUF) — $11
-52. Josh Downs (IND) — $10
-53. Romeo Doubs (GB) — $10
-54. Dontayvion Wicks (GB) — $10
-55. Curtis Samuel (BUF) — $9
-56. Michael Wilson (ARI) — $9
-57. Wan’Dale Robinson (NYG) — $9
-58. Mike Williams (NYJ) — $9
-59. Elijah Moore (CLE) — $8
-60. Odell Beckham Jr. (MIA) — $8
-61. Jahan Dotson (WAS) — $8
-62. Joshua Palmer (LAC) — $8
-63. Demarcus Robinson (LAR) — $7
-64. Tyler Boyd (TEN) — $7
-65. Rashod Bateman (BAL) — $7
-66. Xavier Legette (CAR) — $7
-67. Jameson Williams (DET) — $7
-68. Darnell Mooney (ATL) — $6
-69. Marquise Brown (KC) — $6
-70. Quentin Johnston (LAC) — $6
-71. A.T. Perry (NO) — $6
-72. Tutu Atwell (LAR) — $5
-73. Roman Wilson (PIT) — $5
-74. Jalin Hyatt (NYG) — $5
-75. Tre Tucker (LV) — $5
-76. Demario Douglas (NE) — $5
-77. Ja’Lynn Polk (NE) — $5
-78. Malachi Corley (NYJ) — $4
-79. Treylon Burks (TEN) — $4
-80. Skyy Moore (KC) — $4
-81. Adam Thielen (CAR) — $4
-82. Rashid Shaheed (NO) — $4
-83. Josh Reynolds (DEN) — $4
-84. Noah Brown (HOU) — $3
-85. Jonathan Mingo (CAR) — $3
-86. Rondale Moore (ATL) — $3
-87. Brandon Powell (MIN) — $3
-88. Parker Washington (JAX) — $3
-89. Jauan Jennings (SF) — $3
-90. Ricky Pearsall (SF) — $3
-91. Kadarius Toney (KC) — $2
-92. Kalif Raymond (DET) — $2
-93. Alec Pierce (IND) — $2
-94. DJ Chark (LAC) — $2
-95. Allen Lazard (NYJ) — $2
-96. Greg Dortch (ARI) — $2
-97. Marvin Mims Jr. (DEN) — $2
-98. Darius Slayton (NYG) — $2
-99. Luke McCaffrey (WAS) — $2
-100. Jalen McMillan (TB) — $2
-
+Top WR Rank
+1. Ja'Marr Chase (CIN) — $76  
+2. Justin Jefferson (MIN) — $58  
+3. CeeDee Lamb (DAL) — $56  
+4. Puka Nacua (LAR) — $52  
+5. Malik Nabers (NYG) — $51  
+6. Amon‑Ra St. Brown (DET) — $51  
+7. Nico Collins (HOU) — $45  
+8. Brian Thomas Jr. (JAC) — $45  
+9. Drake London (ATL) — $42  
+10. Tyreek Hill (MIA) — $41  
+11. A.J. Brown (PHI) — $38  
+12. Ladd McConkey (LAC) — $37  
+13. Tee Higgins (CIN) — $35  
+14. Mike Evans (TB) — $33  
+15. Jaxon Smith‑Njigba (SEA) — $33  
+16. Davante Adams (LAR) — $33  
+17. Terry McLaurin (WAS) — $29  
+18. Garrett Wilson (NYJ) — $29  
+19. D.K. Metcalf (PIT) — $29  
+20. Marvin Harrison Jr. (ARI) — $29  
+21. D.J. Moore (CHI) — $28  
+22. Zay Flowers (BAL) — $25  
+23. Courtland Sutton (DEN) — $24  
+24. Xavier Worthy (KC) — $24  
+25. DeVonta Smith (PHI) — $23  
+26. Jerry Jeudy (CLE) — $21  
+27. Calvin Ridley (TEN) — $21  
+28. Jakobi Meyers (LV) — $20  
+29. George Pickens (DAL) — $19  
+30. Jameson Williams (DET) — $17  
+31. Tetairoa McMillan (ARI) — $17  
+32. Jaylen Waddle (MIA) — $17  
+33. Deebo Samuel (SF) — $14  
+34. Chris Olave (NO) — $14  
+35. Stefon Diggs (BUF) — $14  
+36. Michael Pittman Jr. (IND) — $13  
+37. Travis Hunter (JAC) — $12  
+38. Matthew Golden (GB) — $12  
+39. Rashee Rice (KC) — $12  
+40. Jauan Jennings (SF) — $11  
+41. Rome Odunze (CHI) — $11  
+42. Cooper Kupp (SEA) — $11  
+43. Khalil Shakir (BUF) — $10  
+44. Chris Godwin (TB) — $10  
+45. Ricky Pearsall (SF) — $9  
+46. Jordan Addison (MIN) — $9  
+47. Rashid Shaheed (NO) — $8  
+48. Jayden Reed (GB) — $8  
+49. Josh Downs (IND) — $8  
+50. Emeka Egbuka (TB) — $7  
+51. Keon Coleman (BUF) — $7  
+52. Darnell Mooney (ATL) — $6  
+53. Marvin Mims Jr. (DEN) — $4  
+54. Adam Thielen (CAR) — $2  
+55. Wan'Dale Robinson (NYG) — $2  
+56. Marquise Brown (KC) — $2  
+57. Cedric Tillman (CLE) — $2  
+58. Keenan Allen (LAC) — $2  
+59. Rashod Bateman (BAL) — $2  
+60. Xavier Legette (CAR) — $1  
+61. Jayden Higgins (HOU) — $1  
 
 TOP TE Rank
-| Rk | Player | Team | $ | Notes |
-|---|---|---|---:|---|
-| 1 | Sam LaPorta | DET | 26 | Elite role; strong PPR floor/TD ceiling. |
-| 2 | Brock Bowers | LVR | 23 | Blue-chip talent; year-two leap potential. |
-| 3 | Trey McBride | ARI | 22 | Target hog profile; ascending offense. |
-| 4 | Dalton Kincaid | BUF | 21 | Volume and red-zone growth path. |
-| 5 | Mark Andrews | BAL | 20 | High TD equity; minor target volatility with Likely. |
-| 6 | Travis Kelce | KAN | 19 | Still elite usage; age bakes in small discount. |
-| 7 | George Kittle | SFO | 16 | Efficiency king; week-to-week variance. |
-| 8 | Kyle Pitts | ATL | 16 | Talent-driven upside; usage swings possible. |
-| 9 | T.J. Hockenson | MIN | 15 | High-volume when healthy; monitor camp health. |
-| 10 | David Njoku | CLE | 14 | Usage stabilized; strong red-zone role. |
-| 11 | Evan Engram | JAX | 12 | Bankable catches; TDs volatile. |
-| 12 | Dallas Goedert | PHI | 12 | Solid floor; crowded target tree. |
-| 13 | Jake Ferguson | DAL | 10 | Role-secure; top-12 weekly floor. |
-| 14 | Cole Kmet | CHI | 9 | Reliable PPR contributor. |
-| 15 | Dalton Schultz | HOU | 8 | Stable role; TD-dependent weeks. |
-| 16 | Pat Freiermuth | PIT | 8 | Post-hype sleeper; hold for usage spike. |
-| 17 | Isaiah Likely | BAL | 8 | League-winner upside if role expands. |
-| 18 | Luke Musgrave | GNB | 7 | Athletic ceiling; efficiency growth path. |
-| 19 | Cade Otton | TAM | 6 | Snap hog; red-zone usage improving. |
-| 20 | Chigoziem Okonkwo | TEN | 4 | Explosive after catch; QB/volume dependent. |
-| 21 | Michael Mayer | LVR | 3 | Talent is real; Bowers caps ceiling. |
-| 22 | Hunter Henry | NWE | 3 | Red-zone specialist; low-volume offense. |
-| 23 | Noah Fant | SEA | 3 | Routes/athleticism; target share key. |
-| 24 | Gerald Everett | CHI | 3 | YAC-friendly role; streaming value. |
-| 25 | Tyler Higbee | LAR | 3 | Role steady; monitor health leading into camp. |
-| 26 | Dawson Knox | BUF | 2 | TD-or-bust behind Kincaid. |
-| 27 | Mike Gesicki | CIN | 2 | Boom/bust spike weeks. |
-| 28 | Tyler Conklin | NYJ | 2 | Quiet PPR floor; low TD rates. |
-| 29 | Juwan Johnson | NOR | 3 | TD equity; target volatility. |
-| 30 | Taysom Hill | NOR | 4 | Gadget TDs; league setting dependent. |
-| 31 | Brevin Jordan | HOU | 2 | Athletic depth; contingent upside. |
-| 32 | Ben Sinnott | WAS | 2 | Versatile YAC rookie (’24 class); role watch. |
-| 33 | Jonnu Smith | MIA | 2 | Scheme-friendly YAC; target competition. |
-| 34 | Daniel Bellinger | NYG | 1 | Volume swingy; bye-week streamer. |
-| 35 | Durham Smythe | MIA | 1 | Full-time snaps; low aDOT. |
-| 36 | Jelani Woods | IND | 1 | Size/speed dart; health/usage watch. |
-| 37 | Mo Alie-Cox | IND | 1 | TD-or-bust depth. |
-| 38 | Kylen Granson | IND | 1 | Route runner; committee risk. |
-| 39 | Donald Parham | LAC | 1 | Red-zone role; big-play TDs. |
-| 40 | Colby Parkinson | LAR | 1 | Expanded role possible; watch camp. |
-| 41 | Foster Moreau | NOR | 1 | Rotational; spot-start depth. |
-| 42 | Theo Johnson | NYG | 1 | Traits-y (’24 rookie); stash-and-see. |
-| 43 | Cade Stover | HOU | 2 | Physical (’24 rookie); contingent on snaps. |
-| 44 | Tip Reiman | ARI | 1 | Inline-heavy (’24 rookie); TD variance. |
-| 45 | Jared Wiley | KAN | 1 | Athletic (’24 rookie); backup to Kelce. |
-| 46 | Erick All | CIN | 1 | Pass-game chops (’24 rookie); depth chart crowded. |
-| 47 | Tanner Hudson | CIN | 1 | Proven pass-catcher; role watch. |
-| 48 | Luke Schoonmaker | DAL | 1 | Depth; contingent value behind Ferguson. |
-| 49 | Tommy Tremble | CAR | 1 | Red-zone usage; low volume. |
-| 50 | Noah Gray | KAN | 1 | Direct Kelce contingency; stash-worthy. |
+|1. Brock Bowers (LV) — $42  
+2. Trey McBride (ARI) — $38  
+3. George Kittle (SF) — $30  
+4. Travis Kelce (KC) — $19  
+5. Sam LaPorta (DET) — $18  
+6. T.J. Hockenson (MIN) — $15  
+7. David Njoku (CLE) — $15  
+8. Mark Andrews (BAL) — $14  
+9. Tyler Warren (IND) — $9  
+10. Evan Engram (DEN) — $8  
+11. Jake Ferguson (DAL) — $5  
+12. Tucker Kraft (GB) — $5  
+13. Dallas Goedert (PHI) — $4  
+14. Zach Ertz (WAS) — $4  
+15. Dalton Kincaid (BUF) — $3  
+16. Kyle Pitts (ATL) — $3  
+17. Hunter Henry (NE) — $2  
+18. Colston Loveland (CHI) — $1  
+19. Brenton Strange (JAC) — $1  
+20. Cade Otton (TB) — $0  
+21. Jonnu Smith (PIT) — $0  
+22. Darren Waller (MIA) — $0  
+23. Chigoziem Okonkwo (TEN) — $0  
+24. Mike Gesicki (CIN) — $0  
+25. Dalton Schultz (HOU) — $0  
+26. Isaiah Likely (BAL) — $0  
+27. Pat Freiermuth (PIT) — $0  
+28. Juwan Johnson (NO) — $0  
+29. Robbie Ouzts (SEA) — $0  
+30. Mason Taylor (NYJ) — $0  
+31. Tyler Higbee (LAR) — $0  
+32. Theo Johnson (NYG) — $0  
+33. Elijah Arroyo (SEA) — $0  
+34. Will Dissly (LAC) — $0  
+35. Noah Fant (CIN) — $0  
+36. Ja'Tavion Sanders (CAR) — $0  
+37. Tyler Conklin (LAC) — $0  
+38. AJ Barner (SEA) — $0  
+39. Noah Gray (KC) — $0  
+40. Cole Kmet (CHI) — $0  
+41. Austin Hooper (NE) — $0  
+42. Michael Mayer (LV) — $0  
+43. Harold Fannin Jr. (CLE) — $0  
+44. Oronde Gadsden II (LAC) — $0  
+45. Foster Moreau (NO) — $0  
+46. Dawson Knox (BUF) — $0  
+47. Terrance Ferguson (LAR) — $0
