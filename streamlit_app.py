@@ -45,7 +45,7 @@ def who_should_i_nominate(background_info: str, user_team: str, remaining_budget
     Bench players usually go for $1.
     Always return your answer in with:
     - A short intro (1–2 sentences)
-    - 3–5 concise bullet points with actionable advice
+    - Use bullet points with 3-5 sentences and actionable advice
     """
     response = client.responses.create(
         model="gpt-5-mini",
@@ -65,7 +65,7 @@ def should_i_bid(background_info: str, user_team: str, other_team: str, player: 
     Bench players usually go for $1.
     Always return your answer with:
     - A direct yes/no recommendation up front
-    - 3–5 bullet points explaining the reasoning
+    - Use bullet points with 3-5 sentences
     """
     response = client.responses.create(
         model="gpt-5-mini",
